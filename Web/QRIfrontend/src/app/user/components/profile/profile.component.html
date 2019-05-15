@@ -1,0 +1,36 @@
+<h3>Thông tin cá nhân</h3>
+<div class="list-group">
+  <li class="list-group-item list-group-item-action flex-column align-items-start"
+    *ngFor="let opt of opts">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Name: {{opt.displayName}}</h5>
+    </div>
+  </li>
+  <li class="list-group-item list-group-item-action flex-column align-items-start"
+    *ngFor="let opt of opts">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">Day of Birth: {{opt.birth}}</h5>
+      </div>
+    </li>
+  <li class="list-group-item list-group-item-action flex-column align-items-start"
+    *ngFor="let opt of opts">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Phone: {{opt.phoneNumber}}</h5>
+    </div>
+  </li>
+  <li class="list-group-item list-group-item-action flex-column align-items-start" 
+    *ngFor="let opt of opts">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Email: {{opt.email}}</h5>
+    </div>
+  </li>
+  <li class="list-group-item list-group-item-action flex-column align-items-start" 
+    *ngFor="let opt of opts">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Password: 
+        <input style="border: none" type="password" value="{{opt.providerId}}" readonly>
+        <button>Thay đổi</button>
+      </h5>
+    </div>
+  </li>
+</div>

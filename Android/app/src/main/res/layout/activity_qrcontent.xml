@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QRContentActivity">
+
+
+    <TextView
+        android:id="@+id/textViewNameQR"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="8dp"
+        android:text="Tên"
+        app:layout_constraintEnd_toEndOf="@+id/textViewIdQR"
+        app:layout_constraintStart_toStartOf="@+id/textViewIdQR"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIdQR" />
+
+    <TextView
+        android:id="@+id/textViewCategory"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:text="Loại"
+        app:layout_constraintEnd_toEndOf="@+id/textViewNameQR"
+        app:layout_constraintStart_toStartOf="@+id/textViewNameQR"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNameQR" />
+
+    <TextView
+        android:id="@+id/textViewIdQR"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewContext"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="8dp"
+        android:cursorVisible="false"
+        android:isScrollContainer="true"
+        android:scrollbars="vertical"
+        android:text="Nội dung"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCategory"
+        app:layout_constraintStart_toStartOf="@+id/textViewCategory"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCategory" />
+
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewContext"
+        app:layout_constraintStart_toStartOf="@+id/textViewContext"
+        app:layout_constraintTop_toBottomOf="@+id/textViewContext"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,25 @@
+.border {
+    background-color: gray;
+    color: black;
+    margin-right: 10em;
+}
+
+.border .label {
+    margin-left: 2em;
+}
+
+.span {
+    border: none;
+    background-color: white;
+    margin-left: 2em;
+}
+
+input.myText {
+    border: none;
+    background-color: gray;
+    margin-left: 2em;
+}
+
+#ev {
+    
+}

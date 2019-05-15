@@ -1,0 +1,30 @@
+<div *ngIf="opt$ | async as opt" id="ve">
+  <div>
+    <h2>{{ opt.nameqr }}</h2>
+  </div>
+  <ngx-qrcode [qrc-element-type]="elementType" [qrc-value] = "value"></ngx-qrcode>
+  <div class="border">
+    <label class="label">ID: </label>
+    <input class="myText" value="{{ opt.idqr }}" readOnly>
+  </div>
+  <div class="border">
+    <label class="label">Tên: </label>
+    <input class="myText" value="{{ opt.nameqr }}" readOnly>
+  </div>
+  <div class="border">
+    <label class="label">Loại: </label>
+    <input class="myText" value="{{ opt.sel1 }}" readOnly>
+  </div>
+  <div class="border">
+    <label class="label">Nội dung: </label>
+    <textarea class="form-control" aria-label="With textarea" style="background-color: gray; color: black">{{ opt.context }}</textarea>
+    <!-- <input class="myText" value="" readOnly> -->
+  </div>
+  <div class="border">
+    <label class="label">Đính kèm: </label>
+    <img [src]="urlImg" alt="NONE" width="128px" height="128px">
+    <!-- <input class="myText" id="myimg" type="image" src="" readOnly> -->
+  </div>
+  <button routerLink="/managedqr/repair/{{opt.idqr}}">Thay đổi</button>
+  <button (click)="delete()">Xóa</button>
+</div>

@@ -1,0 +1,94 @@
+/* List's private CSS styles */
+.selected {
+    background-color: #CFD8DC !important;
+    color: white;
+  }
+  .optss {
+    margin: 0 0 3em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+  .optss li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: rgb(153, 153, 153);
+    margin-left: -5em;
+    margin-top: 1em;
+    height: 3em;
+    width: 50em;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .optss li.selected:hover {
+    background-color: #BBD8DC !important;
+    color: white;
+  }
+  .optss li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+  }
+  .optss .text {
+    position: relative;
+    top: 0em;
+    
+  }
+  .optss .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #607D8B;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    /* top: -4px; */
+    height: 6.1em;
+    width: 12em;
+    margin-right: .8em;
+    border-radius: 12px 0 0 12px;
+  }
+
+
+  /* Add a black background color to the top navigation bar */
+  
+  .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 15px;
+    border: none;
+  }
+  
+  .topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .topnav .search-container button:hover {
+    background: #ccc;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav .search-container {
+      float: none;
+    }
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;  
+    }
+  }

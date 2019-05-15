@@ -1,0 +1,25 @@
+<div class="homepage">
+  <!-- Header -->
+  <div id="header">
+      <div class="container">
+          
+        <!-- Logo -->
+          <div id="logo">
+            <h1><a>- Quản lý mã QR -</a></h1>
+          </div>
+        
+        <!-- Nav -->
+        
+          <nav id="nav">
+            <ul>
+              <li *ngFor="let opt of opts">
+                <a routerLink="/{{opt.id}}">{{opt.name}}</a>
+              </li>
+            </ul>
+          </nav>
+
+      </div>
+    </div>
+  <!-- Header -->
+
+</div>

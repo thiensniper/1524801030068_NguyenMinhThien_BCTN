@@ -1,0 +1,15 @@
+<h3>Danh sách QR</h3>
+<div class="topnav">
+    <input [(ngModel)]="searchText" placeholder="Search.." class="advancedSearchTextbox">
+    <button type="submit"><i class="fa fa-search"></i></button>
+</div>
+<ul class="optss">
+  <li *ngFor="let opt of opts | grdFilter: { idqr : searchText, nameqr : searchText }"
+  [class.selected]="opt.idqr === selectedId"
+    routerLink="/managedqr/list/{{opt.idqr}}">
+    <div class="module opt">
+      <span class="badge text-center">{{opt.idqr}}</span>{{opt.nameqr}}
+    </div>
+  </li>
+</ul>
+<!-- <app-detail-qr [opt]="selectedOpt"></app-detail-qr> -->
